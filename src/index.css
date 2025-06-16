@@ -39,7 +39,7 @@
   --clr-neutral-900: hsl(0, 0%, 0%);
 
   /* font family */
-  --ff: 'Kumbh Sans', sans-serif;
+  --ff: "Space Mono", monospace;
   --ff-head: var(--ff);
   --ff-body: var(--ff);
 
