@@ -44,7 +44,7 @@
   --ff-body: var(--ff);
 
   /* border radius */
-  --br: 1rem;
+  --br: 0.8rem;
 }
 
 *,
@@ -88,6 +88,51 @@ body {
 .inputSection {
   border-radius: var(--br);
   flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: var(--spacing-400);
+  box-sizing: border-box;
+}
+.label {
+  color: var(--clr-neutral-400);
+  font-size: var(--fs-400);
+  display: block;
+  padding-block-end: var(--spacing-200);
+}
+input[type = number] {
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid var(--clr-neutral-400);
+  border-radius: var(--br);
+  padding: var(--spacing-400);
+  text-transform: uppercase;
+  font-size: var(--fs-400);
+  cursor: pointer;
+}
+menu {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100px;
+  justify-content: space-between;
+}
+menu > button, input[type = text] {
+  height: 45px;
+  width: 110px;
+  text-align: center;
+  padding: var(--spacing-200);
+  box-sizing: border-box;
+  border: 1px solid var(--clr-neutral-400);
+  border-radius: var(--br);
+  background-color: var(--clr-neutral-800);
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-500);
+}
+input[type = text] {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-800);
+  font-size: var(--fs-500);
 }
 .resultSection {
   display: flex;
@@ -131,6 +176,12 @@ body {
   padding: var(--spacing-400);
   text-transform: uppercase;
   font-size: var(--fs-400);
+  cursor: pointer;
+}
+.reset:hover {
+  transition: 500ms all ;
+  background-color: var(--clr-neutral-300);
+  color: var(--clr-neutral-800);
 }
 
 /* Mobile View  */

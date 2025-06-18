@@ -1,6 +1,11 @@
-const Button = () => {
+const Button = ({tipPercentage}) => {
     return (
-        <button></button>
+        <>
+            {tipPercentage == "custom" ? 
+                <input type="text" placeholder="Custom" /> : 
+                <button>{tipPercentage}%</button>
+            }
+        </>
     )
 }
 
