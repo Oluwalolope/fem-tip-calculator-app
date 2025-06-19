@@ -2,7 +2,7 @@ const Button = ({tipPercentage}) => {
     return (
         <>
             {tipPercentage == "custom" ? 
-                <input type="text" placeholder="Custom" /> : 
+                <input type="number" placeholder="Custom" /> : 
                 <button>{tipPercentage}%</button>
             }
         </>
