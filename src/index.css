@@ -58,13 +58,14 @@
 html {
   background-color: var(--clr-neutral-300);
   font-family: var(--ff);
+  font-variant-numeric: tabular-nums;
 }
 
 body {
   display: grid;
   place-items: center;
   margin-inline: auto;
-  overflow-x: hidddn;
+  overflow-x: hidden;
   width: min(100% - 2rem, 800px);
   min-height: 100vh;
 }
@@ -118,6 +119,7 @@ menu {
   flex-wrap: wrap;
   min-height: 100px;
   justify-content: space-between;
+  row-gap: var(--spacing-400);
 }
 menu > button, menu > input[type = number] {
   height: 45px;
@@ -191,6 +193,7 @@ button:hover {
   transition: 500ms all ;
   background-color: var(--clr-neutral-300);
   color: var(--clr-neutral-800);
+  cursor: pointer;
 }
 
 .bill {
@@ -205,8 +208,27 @@ button:hover {
 }
 
 /* Mobile View  */
-@media (max-width: 450px) {
+@media (max-width: 600px) {
+  body {
+    margin-top: var(--spacing-600);
+    margin-inline: 0;
+    width: 100%;
+  }
   .container {
     flex-direction: column;
+    margin-top: var(--spacing-600);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  menu {
+    min-width: 230px;
+    max-width: 435px;
+    margin-inline: auto;
+  }
+  .resultSection {
+    row-gap: var(--spacing-800);
+  }
+  .tipAmount {
+    font-size: var(--fs-800);
   }
 }
