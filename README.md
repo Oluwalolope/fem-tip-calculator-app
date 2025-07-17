@@ -44,7 +44,7 @@ This project helped reinforce:
 ## 🎯 Future Improvements
 
 - Add animations or transitions for better UX  
-- Improve accessibility (keyboard navigation, ARIA labels)  
+- Improve accessibility (keyboard navigation, ARIA labels) of the site 
 - Add unit tests with Jest or React Testing Library  
 - Save user input to local storage  
 
