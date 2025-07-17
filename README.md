@@ -1,12 +1,56 @@
-# React + Vite
+# 💸 Tip Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **Tip Calculator** built using **React** and **Vanilla CSS**, based on a challenge from **Frontend Mentor**. This app helps users calculate the tip amount and total cost per person based on the bill, selected (or custom) tip percentage, and number of people sharing the bill.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧮 Features
 
-## Expanding the ESLint configuration
+- Input total **bill amount**
+- Select a **tip percentage** from predefined options (e.g. 5%, 10%, 15%, etc.)
+- Enter a **custom tip percentage**
+- Input **number of people** sharing the bill
+- Displays:
+  - **Tip amount per person**
+  - **Total amount per person**
+- Basic form validation and reset functionality
+- Fully responsive layout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Built With
+
+- ⚛️ **React** – For UI rendering and state management
+- 🎨 **Vanilla CSS** – For styling (no frameworks used)
+- 🧩 **Prop Drilling** – For passing data between components
+- 🧠 **State Management** – Using `useState` to handle form inputs and calculated values
+
+---
+
+
+## 🧪 Learnings
+
+This project helped reinforce:
+
+- React component structure  
+- Props and state management using hooks  
+- The importance of lifting state up  
+- How to handle controlled inputs  
+- Basic form logic and validation  
+- Clean, semantic HTML structure with CSS styling  
+
+---
+
+## 🎯 Future Improvements
+
+- Add animations or transitions for better UX  
+- Improve accessibility (keyboard navigation, ARIA labels)  
+- Add unit tests with Jest or React Testing Library  
+- Save user input to local storage  
+
+---
+
+## 📝 Acknowledgments
+
+- Challenge by [Frontend Mentor](https://www.frontendmentor.io/)  
+- Thanks to the open-source community and documentation that helped throughout the build  
