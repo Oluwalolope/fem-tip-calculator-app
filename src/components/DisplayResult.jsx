@@ -1,3 +1,5 @@
+import { formatter } from "../util/tip"
+
 const DisplayResult = ({title, amount}) => {
     return (
         <div className="displayResult">
@@ -5,7 +7,7 @@ const DisplayResult = ({title, amount}) => {
                 <p className="fieldTitle">{title}</p>
                 <p className="fieldSubtitle">/person</p>
             </div>
-            <p className="tipAmount">${amount}</p>
+            <p className="tipAmount">{formatter.format(amount)}</p>
         </div>        
     )
 }

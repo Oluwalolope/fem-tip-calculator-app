@@ -195,6 +195,12 @@ button:hover {
   color: var(--clr-neutral-800);
   cursor: pointer;
 }
+button.active {
+  background-color: var(--clr-neutral-300);
+  color: var(--clr-neutral-800);
+  cursor: pointer;
+}
+
 
 .bill {
   background-image: url(../public/icon-dollar.svg);
